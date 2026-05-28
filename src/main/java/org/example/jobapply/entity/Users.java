@@ -16,6 +16,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import org.example.jobapply.enums.EntityNames;
 import org.example.jobapply.enums.Role;
 
 import java.time.LocalDateTime;
@@ -27,7 +28,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity
-@Table(name = "users")
+@Table(name = EntityNames.USERS)
 @Builder
 public class Users {
     @Id
